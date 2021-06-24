@@ -36,7 +36,11 @@ console.log( "klaar!");
 // 15 is oneven
 
 for (let i = 0; i < 16 ; i++) {
-    console.log(`${i} is ${ (i&1)?' is oneven':' is even'}` );
+    // bitwise and (&) with a number gives true if number is even, false if number is odd.
+    // fellow programmers might get confused, so the
+    // more common modulo operator is used in the solution.
+    // console.log(`${i} is ${ (i&1)?' is oneven':' is even'}` );
+    console.log(`${i} is ${ ( (i%2) == 0  )?' is even':' is oneven'}` );
 }
 
 
