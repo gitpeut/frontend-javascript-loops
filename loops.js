@@ -40,7 +40,7 @@ for (let i = 0; i < 16; i++) {
     // fellow programmers might get confused, so the
     // more common modulo operator is used in the solution.
     // console.log(`${i} is ${ (i&1)?' is oneven':' is even'}` );
-    console.log(`${i} is ${((i % 2) == 0) ? ' is even' : ' is oneven'}`);
+    console.log(`${i} is ${((i % 2) === 0) ? ' is even' : ' is oneven'}`);
 }
 
 
